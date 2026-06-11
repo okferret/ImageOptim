@@ -248,7 +248,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 2660;
 				TargetAttributes = {
 					5AB114FB1B52B11A00A3C73A = {
 						CreatedOnToolsVersion = 7.0;
@@ -257,8 +257,12 @@
 			};
 			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "jpeg" */;
 			compatibilityVersion = "Xcode 12.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* jpeg */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -335,7 +339,9 @@
 		1DEB914B08733D8E0010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = imageoptimjpeg;
 			};
 			name = Debug;
@@ -343,7 +349,9 @@
 		1DEB914C08733D8E0010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = imageoptimjpeg;
 			};
 			name = Release;
@@ -352,10 +360,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A27B9E6139B08640095FC2F /* debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
 				ENABLE_TESTABILITY = YES;
 				LD_DYLIB_INSTALL_NAME = "@loader_path/libimageoptimjpeg.dylib";
 				ONLY_ACTIVE_ARCH = YES;
 				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				USER_HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/src",
 					"$(SRCROOT)",
@@ -367,8 +379,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A27B9E5139B08640095FC2F /* release.xcconfig */;
 			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
 				LD_DYLIB_INSTALL_NAME = "@loader_path/libimageoptimjpeg.dylib";
 				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				USER_HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/src",
 					"$(SRCROOT)",
@@ -379,12 +395,16 @@
 		5AB114FC1B52B11A00A3C73A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
 		5AB114FD1B52B11A00A3C73A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};

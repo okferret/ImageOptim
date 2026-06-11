@@ -89,7 +89,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 2660;
 				TargetAttributes = {
 					CA00E01F74FCA9B0E7F50B60 = {
 						CreatedOnToolsVersion = 9.2;
@@ -153,8 +153,10 @@
 		CA00DF050DDBA9B0E7F50B60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CARGO_XCODE_CARGO_DEP_FILE_NAME = oxipng.d;
 				CARGO_XCODE_CARGO_FILE_NAME = oxipng;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = oxipng;
 				SUPPORTED_PLATFORMS = macosx;
 			};
@@ -163,8 +165,10 @@
 		CA00FBAC58F8A9B0E7F50B60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CARGO_XCODE_CARGO_DEP_FILE_NAME = oxipng.d;
 				CARGO_XCODE_CARGO_FILE_NAME = oxipng;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = oxipng;
 				SUPPORTED_PLATFORMS = macosx;
 			};
@@ -193,11 +197,13 @@
 				"CARGO_XCODE_TARGET_OS[sdk=macosx*]" = darwin;
 				"CARGO_XCODE_TARGET_OS[sdk=watchsimulator]" = "watchos-sim";
 				CURRENT_PROJECT_VERSION = 9.0;
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
 				MARKETING_VERSION = 9.0.0;
 				PRODUCT_NAME = oxipng;
 				RUSTUP_TOOLCHAIN = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTS_MACCATALYST = YES;
 			};
 			name = Release;
@@ -225,12 +231,14 @@
 				"CARGO_XCODE_TARGET_OS[sdk=macosx*]" = darwin;
 				"CARGO_XCODE_TARGET_OS[sdk=watchsimulator]" = "watchos-sim";
 				CURRENT_PROJECT_VERSION = 9.0;
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
 				MARKETING_VERSION = 9.0.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = oxipng;
 				RUSTUP_TOOLCHAIN = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTS_MACCATALYST = YES;
 			};
 			name = Debug;

@@ -144,7 +144,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 2660;
 				TargetAttributes = {
 					5AB1154C1B52B1C800A3C73A = {
 						CreatedOnToolsVersion = 7.0;
@@ -153,11 +153,11 @@
 			};
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "jpegoptim" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* jpegoptim */;
 			projectDirPath = "";
@@ -215,6 +215,9 @@
 		1DEB928608733DD80010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = jpegoptim;
 				SKIP_INSTALL = YES;
 			};
@@ -223,6 +226,9 @@
 		1DEB928708733DD80010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = jpegoptim;
 				SKIP_INSTALL = YES;
 			};
@@ -251,6 +257,7 @@
 					"$(SRCROOT)/../libjpeg/src/",
 				);
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Debug;
 		};
@@ -278,18 +285,23 @@
 					"$(SRCROOT)/../libjpeg/",
 					"$(SRCROOT)/../libjpeg/src/",
 				);
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Release;
 		};
 		5AB1154D1B52B1C900A3C73A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
 		5AB1154E1B52B1C900A3C73A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};

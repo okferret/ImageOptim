@@ -89,7 +89,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 2660;
 				TargetAttributes = {
 					CA00FC5A7BA8C09639ADC154 = {
 						CreatedOnToolsVersion = 9.2;
@@ -153,8 +153,10 @@
 		CA00BCAF10DEC09639ADC154 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CARGO_XCODE_CARGO_DEP_FILE_NAME = svgcleaner.d;
 				CARGO_XCODE_CARGO_FILE_NAME = svgcleaner;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = svgcleaner;
 				SUPPORTED_PLATFORMS = macosx;
 			};
@@ -163,8 +165,10 @@
 		CA00BE89E854C09639ADC154 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CARGO_XCODE_CARGO_DEP_FILE_NAME = svgcleaner.d;
 				CARGO_XCODE_CARGO_FILE_NAME = svgcleaner;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = svgcleaner;
 				SUPPORTED_PLATFORMS = macosx;
 			};
@@ -188,10 +192,12 @@
 				"CARGO_XCODE_TARGET_OS[sdk=iphonesimulator*][arch=x86_64*]" = ios;
 				"CARGO_XCODE_TARGET_OS[sdk=macosx*]" = darwin;
 				CURRENT_PROJECT_VERSION = 0.9;
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
 				MARKETING_VERSION = 0.9.6;
 				PRODUCT_NAME = svgcleaner;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTS_MACCATALYST = YES;
 			};
 			name = Release;
@@ -214,11 +220,13 @@
 				"CARGO_XCODE_TARGET_OS[sdk=iphonesimulator*][arch=x86_64*]" = ios;
 				"CARGO_XCODE_TARGET_OS[sdk=macosx*]" = darwin;
 				CURRENT_PROJECT_VERSION = 0.9;
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
 				MARKETING_VERSION = 0.9.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = svgcleaner;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTS_MACCATALYST = YES;
 			};
 			name = Debug;

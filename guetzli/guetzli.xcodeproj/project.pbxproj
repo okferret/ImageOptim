@@ -27,7 +27,7 @@
 		D047E51A1E7D86AD0036F96B /* quality.cc in Sources */ = {isa = PBXBuildFile; fileRef = D047E4AF1E7D7F070036F96B /* quality.cc */; };
 		D047E51C1E7D86AD0036F96B /* quantize.cc in Sources */ = {isa = PBXBuildFile; fileRef = D047E4B11E7D7F070036F96B /* quantize.cc */; };
 		D047E51E1E7D86AD0036F96B /* score.cc in Sources */ = {isa = PBXBuildFile; fileRef = D047E4B31E7D7F070036F96B /* score.cc */; };
-		D047E5231E7D87670036F96B /* liblibpng.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D047E5221E7D87670036F96B /* liblibpng.dylib */; };
+		D047E5231E7D87670036F96B /* liblibpng.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB6A9061E966617009BDBC3 /* liblibpng.dylib */; };
 		D047E5291E7D8A050036F96B /* butteraugli.cc in Sources */ = {isa = PBXBuildFile; fileRef = D047E5251E7D89D50036F96B /* butteraugli.cc */; };
 		D047E52B1E7D8BFD0036F96B /* libimageoptimjpeg.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D047E52A1E7D8BFD0036F96B /* libimageoptimjpeg.dylib */; };
 /* End PBXBuildFile section */
@@ -126,11 +126,11 @@
 		D047E4B41E7D7F070036F96B /* score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = score.h; path = guetzli/score.h; sourceTree = "<group>"; };
 		D047E4B51E7D7F070036F96B /* stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stats.h; path = guetzli/stats.h; sourceTree = "<group>"; };
 		D047E4E81E7D868D0036F96B /* guetzli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = guetzli; sourceTree = BUILT_PRODUCTS_DIR; };
-		D047E5221E7D87670036F96B /* liblibpng.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liblibpng.dylib; path = "../../../Library/Developer/Xcode/DerivedData/ImageOptim-cmhdqovjmikzhafpeansxwkmezkf/Build/Products/Debug/liblibpng.dylib"; sourceTree = "<group>"; };
+		D047E5221E7D87670036F96B /* liblibpng.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liblibpng.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		D047E5241E7D89D50036F96B /* butteraugli_main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = butteraugli_main.cc; path = guetzli/third_party/butteraugli/butteraugli/butteraugli_main.cc; sourceTree = "<group>"; };
 		D047E5251E7D89D50036F96B /* butteraugli.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = butteraugli.cc; path = guetzli/third_party/butteraugli/butteraugli/butteraugli.cc; sourceTree = "<group>"; };
 		D047E5261E7D89D50036F96B /* butteraugli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = butteraugli.h; path = guetzli/third_party/butteraugli/butteraugli/butteraugli.h; sourceTree = "<group>"; };
-		D047E52A1E7D8BFD0036F96B /* libimageoptimjpeg.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libimageoptimjpeg.dylib; path = "../../../Library/Developer/Xcode/DerivedData/ImageOptim-cmhdqovjmikzhafpeansxwkmezkf/Build/Products/Debug/libimageoptimjpeg.dylib"; sourceTree = "<group>"; };
+		D047E52A1E7D8BFD0036F96B /* libimageoptimjpeg.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libimageoptimjpeg.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,15 +293,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 2660;
 			};
 			buildConfigurationList = D047E46D1E7D7DF00036F96B /* Build configuration list for PBXProject "guetzli" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = D047E4691E7D7DF00036F96B;
 			productRefGroup = D047E4731E7D7DF00036F96B /* Products */;
@@ -394,6 +394,7 @@
 					HAVE_CONFIG_H,
 					PNG_CONFIGURE_LIBPNG,
 				);
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				USER_HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/guetzli",
 					"$(SRCROOT)/guetzli/third_party/butteraugli",
@@ -414,6 +415,7 @@
 					HAVE_CONFIG_H,
 					PNG_CONFIGURE_LIBPNG,
 				);
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				USER_HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/guetzli",
 					"$(SRCROOT)/guetzli/third_party/butteraugli",
@@ -425,6 +427,8 @@
 		D047E4D01E7D81720036F96B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -432,6 +436,8 @@
 		D047E4D11E7D81720036F96B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -439,6 +445,9 @@
 		D047E4ED1E7D868D0036F96B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -447,6 +456,9 @@
 		D047E4EE1E7D868D0036F96B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

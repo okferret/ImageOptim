@@ -166,7 +166,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2660;
 				TargetAttributes = {
 					5AD202B21B52A641000D4FF2 = {
 						CreatedOnToolsVersion = 7.0;
@@ -175,11 +175,11 @@
 			};
 			buildConfigurationList = 5A1EBE6517908D9D00361F08 /* Build configuration list for PBXProject "zopfli-png" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 5A1EBE6117908D9D00361F08;
 			productRefGroup = 5A1EBE6B17908D9D00361F08 /* Products */;
@@ -238,6 +238,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../libpng/";
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Debug;
 		};
@@ -251,13 +252,17 @@
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../libpng/";
 				LLVM_LTO = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Release;
 		};
 		5A1EBE7417908D9D00361F08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -266,7 +271,10 @@
 		5A1EBE7517908D9D00361F08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 93KUUP9B5K;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -275,12 +283,16 @@
 		5AD202B31B52A641000D4FF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
 		5AD202B41B52A641000D4FF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
