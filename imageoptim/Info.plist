@@ -124,8 +124,8 @@
 	<string>Help</string>
 	<key>CFBundleHelpBookName</key>
 	<string>ImageOptim Help</string>
-	<key>CFBundleIconFile</key>
-	<string>ImageOptim.icns</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
